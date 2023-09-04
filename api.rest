@@ -1,0 +1,19 @@
+POST https://august-project.onrender.com/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Vicenius",
+    "email": "vini08.mantovani@gmail.com",
+    "password": "1234"
+}
+
+###Autenticação do usuário
+
+POST https://august-project.onrender.com/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Vicenius",
+    "email": "vini08.mantovani@gmail.com",
+    "password": "1234"
+}
