@@ -8,6 +8,9 @@ export default class User extends BaseModel {
 
   @column()
   public name: string
+
+  @column()
+  public usuario: string
   
   @column()
   public email: string
@@ -23,6 +26,28 @@ export default class User extends BaseModel {
 
   @column()
   public telefone: string
+
+//específicos
+  @column()
+  public razao: string | null
+
+  @column()
+  public cep: string | null
+
+  @column()
+  public cidade: string | null
+
+  @column()
+  public bairro: string | null
+
+  @column()
+  public numero: string | null
+
+  @column()
+  public logradouro: string | null
+
+  @column()
+  public atendimento: string | null
 
   @column()
   public rememberMeToken: string | null
