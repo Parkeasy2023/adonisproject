@@ -1,19 +1,24 @@
-POST https://ParkEasy.onrender.com/register HTTP/1.1
+###Login do usuário
+
+POST https://parkeasybd.onrender.com/register HTTP/1.1
 Content-Type: application/json
 
 {
     "name": "Vicenius",
+    "user": "vincenius_01",
     "email": "vini09.castelhano@gmail.com",
-    "password": "1234"
+    "password": "12345",
+    "document": "123.456.789-12",
+    "sexo": "Masculino",
+    "telefone": "(35)99123-4567"
 }
 
 ###Autenticação do usuário
 
-POST https://ParkEasy.onrender.com/login HTTP/1.1
+POST https://parkeasybd.onrender.com/login HTTP/1.1
 Content-Type: application/json
 
 {
-    "name": "Vicenius",
-    "email": "vini09.castelhano@gmail.com",
-    "password": "1234"
+    "document": "123.456.789-12",
+    "password": "12345"
 }
