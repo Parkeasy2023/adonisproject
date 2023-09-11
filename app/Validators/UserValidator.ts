@@ -32,14 +32,17 @@ export default class UserValidator {
       rules.required(),
       rules.email(),
       rules.unique({ table: 'users', column: 'email'})
-
-
     ]),
+    usuario: schema.string(),
+
     password: schema.string({}, [
       rules.required(),
       rules.minLength(4)
 
-    ])
+    ]),
+    cep: schema.string(),
+    ///CONTINUAR
+
   })
 
   /**
