@@ -25,7 +25,7 @@ export default class UserValidator {
 
     ]),
 
-    documento: schema.string({}, [
+    document: schema.string({}, [
       rules.required(),
       rules.minLength(11)
 
