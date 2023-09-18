@@ -24,11 +24,11 @@ export default class UserValidator {
     ]),
     document: schema.string({}, [
       rules.required(),
-      rules.minLength(20)
+      rules.minLength(14)
     ]),
     telefone: schema.string({}, [
       rules.required(),
-      rules.minLength(20)
+      rules.minLength(14)
 
     ]),
     sexo: schema.string.optional(),
