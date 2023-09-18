@@ -27,30 +27,30 @@ export default class User extends BaseModel {
   @column()
   public telefone: string
 
-//específicos
+//específicos: string | null
   @column()
-  public razao: string | null
+  public razao: string
 
   @column()
-  public cep: string | null
+  public cep: string
 
   @column()
-  public cidade: string | null
+  public cidade: string
 
   @column()
-  public bairro: string | null
+  public bairro: string 
 
   @column()
-  public numero: string | null
+  public numero: string 
 
   @column()
-  public logradouro: string | null
+  public logradouro: string 
 
   @column()
-  public atendimento: string | null
+  public atendimento: string 
 
   @column()
-  public rememberMeToken: string | null
+  public rememberMeToken: string 
 
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime
