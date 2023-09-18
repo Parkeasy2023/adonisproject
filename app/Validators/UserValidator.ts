@@ -34,14 +34,14 @@ export default class UserValidator {
 
     ]),
 
-    sexo: schema.string.nullableAndOptional(),
-    cep: schema.string.nullableAndOptional(),
-    razao: schema.string.nullableAndOptional(),
-    cidade: schema.string.nullableAndOptional(),
-    bairro: schema.string.nullableAndOptional(),
-    numero: schema.string.nullableAndOptional(),
-    logradouro: schema.string.nullableAndOptional(),
-    atendimento: schema.string.nullableAndOptional(),
+    sexo: schema.string.optional(),
+    cep: schema.string.optional(),
+    razao: schema.string.optional(),
+    cidade: schema.string.optional(),
+    bairro: schema.string.optional(),
+    numero: schema.string.optional(),
+    logradouro: schema.string.optional(),
+    atendimento: schema.string.optional(),
 
   })
 
