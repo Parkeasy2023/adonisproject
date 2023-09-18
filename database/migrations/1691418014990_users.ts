@@ -7,7 +7,7 @@ export default class extends BaseSchema {
     this.schema.createTable(this.tableName, (table) => {
       table.increments('id').primary()
       table.string('name',255).notNullable()
-      table.string('usuario',255).notNullable()
+      table.string('usuario',255).notNullable().unique()
       table.string('email', 255).notNullable().unique()
       table.string('password', 180).notNullable()
       table.string('document', 11).notNullable().unique()
@@ -20,7 +20,7 @@ export default class extends BaseSchema {
       table.string('bairro', 11).nullable()
       table.string('numero', 11).nullable()
       table.string('logradouro', 11).nullable()
-      table.boolean('atendimento').nullable()
+      table.boolean('atendimento',).nullable()
 
       table.string('remember_me_token').nullable()
 

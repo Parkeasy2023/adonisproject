@@ -18,25 +18,19 @@ export default class UserValidator {
       rules.required(),
       rules.unique({ table: 'users', column: 'usuario'})
     ]),
-
     password: schema.string({}, [
       rules.required(),
       rules.minLength(4)
-
     ]),
-
     document: schema.string({}, [
       rules.required(),
       rules.minLength(11)
-
     ]),
-
     telefone: schema.string({}, [
       rules.required(),
       rules.minLength(8)
 
     ]),
-
     sexo: schema.string.optional(),
     cep: schema.string.optional(),
     razao: schema.string.optional(),
@@ -45,7 +39,6 @@ export default class UserValidator {
     numero: schema.string.optional(),
     logradouro: schema.string.optional(),
     atendimento: schema.string.optional(),
-
   })
 
   public messages: CustomMessages = {
