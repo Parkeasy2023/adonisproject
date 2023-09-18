@@ -20,15 +20,15 @@ export default class UserValidator {
     ]),
     password: schema.string({}, [
       rules.required(),
-      rules.minLength(4)
+      rules.minLength(5)
     ]),
     document: schema.string({}, [
       rules.required(),
-      rules.minLength(11)
+      rules.minLength(20)
     ]),
     telefone: schema.string({}, [
       rules.required(),
-      rules.minLength(8)
+      rules.minLength(20)
 
     ]),
     sexo: schema.string.optional(),
