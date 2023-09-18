@@ -5,12 +5,12 @@ Content-Type: application/json
 
 {
     "name": "Vicenius",
-    "usuario": "vincenius_01",
     "email": "vini09.castelhano@gmail.com",
+    "usuario": "vincenius_01",
     "password": "12345",
     "document": "123.456.789-12",
+    "telefone": "(35)99123-4567",
     "sexo": "Masculino",
-    "telefone": "(35)99123-4567"
 }
 
 ###Autenticação do usuário
