@@ -11,6 +11,7 @@ Content-Type: application/json
     "document": "123.456.789-12",
     "telefone": "(35)99123-4567",
     "sexo": "Masculino",
+    "datanasc": "19/07/2005"
 }
 
 ###Autenticação do usuário
