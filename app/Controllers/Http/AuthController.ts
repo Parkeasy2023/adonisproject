@@ -4,15 +4,16 @@ import UserValidator from '../../Validators/UserValidator'
 
 export default class AuthController {
 
-    public async register({request}:HttpContextContract) {
+    public async register({ request }: HttpContextContract) {
         const data = await request.validate(UserValidator)
         const userDb = await User.create(data)
         return userDb
     }
-    
-    public async login({request, auth, response}: HttpContextContract) {
-        try{
-            const {document, password} = request.all()
+
+    public async login({ request, auth, response }: HttpContextContract) {
+        console.log('aqui')
+        try {
+            const { document, password } = request.all()
             const token = await auth.use('api').attempt(document, password, {
                 expiresIn: '1day'
             })
