@@ -32,6 +32,7 @@ export default class UserValidator {
 
     ]),
     sexo: schema.string.optional(),
+    datanasc: schema.string.optional(),
     cep: schema.string.optional(),
     razao: schema.string.optional(),
     cidade: schema.string.optional(),

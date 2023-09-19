@@ -13,6 +13,7 @@ export default class extends BaseSchema {
       table.string('document', 11).notNullable().unique()
       table.string('telefone', 11).notNullable().unique()
       table.string('sexo', 255).nullable() 
+      table.string('datanasc', 8).nullable()
 
       table.string('razao',255).nullable()
       table.string('cep', 11).nullable()

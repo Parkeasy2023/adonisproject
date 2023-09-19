@@ -27,6 +27,9 @@ export default class User extends BaseModel {
   @column()
   public sexo: string
 
+  @column()
+  public datanasc: string
+
 
 //específicos: string | null
   @column()
