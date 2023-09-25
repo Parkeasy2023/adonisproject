@@ -7,7 +7,7 @@
     "build": "node ace build --production",
     "start": "node build/server.js",
     "test": "node ace test",
-    "migrate": "node ace migration"
+    "migrate": "node ace migration:run"
   },
     "devDependencies": {
     "@adonisjs/assembler": "^5.9.5",
