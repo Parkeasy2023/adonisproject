@@ -22,6 +22,7 @@ export default class UserValidator {
     ]),
     document: schema.string({}, [
       rules.required(),
+      rules.unique({ table: 'users', column: 'document'}),
       rules.minLength(14)
     ]),
     telefone: schema.string({}, [
@@ -44,6 +45,7 @@ export default class UserValidator {
   public messages: CustomMessages = {
     required: "O {{field}} é obrigatório!",
     'email.unique': "Email já cadastrado!",
-    'minLenght': "Senha muito pequena!"
+    'minLenght': "Senha muito pequena!",
+    'document.unique': "Documento já cadastrado!"
   }
 }

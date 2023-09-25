@@ -4,14 +4,14 @@ POST https://parkeasybd.onrender.com/register HTTP/1.1
 Content-Type: application/json
 
 {
-    "name": "Vicenius",
-    "email": "vini09.castelhano@gmail.com",
-    "usuario": "vicenius_01",
+    "name": "Clara",
+    "email": "claram@gmail.com",
+    "usuario": "clarawm",
     "password": "12345",
     "document": "123.456.789-12",
-    "telefone": "35991234567",
-    "sexo": "Masculino",
-    "datanasc": "19/07/2005"
+    "telefone": "35997663806",
+    "sexo": "Feminino",
+    "datanasc": "23/03/2005"
 
 }
 
