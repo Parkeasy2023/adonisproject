@@ -4,14 +4,14 @@ POST https://parkeasybd.onrender.com/register HTTP/1.1
 Content-Type: application/json
 
 {
-    "name": "Alice",
-    "email": "alicem@gmail.com",
-    "usuario": "alicee",
-    "password": "12345",
-    "document": "138.243.946-69",
-    "telefone": "35984356096",
+    "name": "Clara",
+    "email": "claram@gmail.com",
+    "usuario": "clarawm",
+    "password": "Clara1",
+    "document": "020.654.376-00",
+    "telefone": "35997663806",
     "sexo": "Feminino",
-    "datanasc": "28/02/2006"
+    "datanasc": "23/03/2005"
 
 }
 
@@ -21,6 +21,6 @@ POST https://parkeasybd.onrender.com/login HTTP/1.1
 Content-Type: application/json
 
 {
-    "document": "138.243.946-69",
-    "password": "12345"
+    "document": "020.654.376-00",
+    "password": "Clara1"
 }
