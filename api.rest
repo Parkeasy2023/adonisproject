@@ -42,8 +42,7 @@ Content-Type: application/json
     "cidade":"Varginha",
     "bairro": "Cidade Nova",
     "numero": "7",
-    //"logradouro": "",
-    "atendimento": "Segundo a Sábado",
+    "atendimento": "Segundo a Sábado"
 
 }
 

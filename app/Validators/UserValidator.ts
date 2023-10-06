@@ -27,7 +27,7 @@ export default class UserValidator {
     ]),
     telefone: schema.string({}, [
       rules.required(),
-      rules.minLength(11)
+      rules.minLength(10)
     ]),
     sexo: schema.string.optional(),
     datanasc: schema.string.optional({}, [
