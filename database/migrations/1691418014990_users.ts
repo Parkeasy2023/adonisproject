@@ -21,7 +21,7 @@ export default class extends BaseSchema {
       table.string('bairro', 11).nullable()
       table.string('numero', 11).nullable()
       table.string('logradouro', 11).nullable()
-      table.boolean('atendimento',).nullable()
+      table.string('atendimento',).nullable()
 
       table.string('remember_me_token').nullable()
 
