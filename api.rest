@@ -1,4 +1,4 @@
-###Login do usuário
+###Cadastro do usuário
 
 POST https://parkeasybd.onrender.com/register HTTP/1.1
 Content-Type: application/json
@@ -15,7 +15,7 @@ Content-Type: application/json
 
 }
 
-###Autenticação do usuário
+###Login do usuário
 
 POST https://parkeasybd.onrender.com/login HTTP/1.1
 Content-Type: application/json
@@ -23,4 +23,36 @@ Content-Type: application/json
 {
     "document": "020.654.376-00",
     "password": "Clara1"
+}
+
+###Cadastro do estacionamento
+
+POST https://parkeasybd.onrender.com/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "João da Silva",
+    "email": "easyest@gmail.com",
+    "usuario": "EasyEst",
+    "password": "easy123",
+    "document": "57.283.899/0001-14",
+    "telefone": "3532246987",
+    "cep": "37044-180",
+    "razao":"Easy Estacionamento",
+    "cidade":"Varginha",
+    "bairro": "Cidade Nova",
+    "numero": "7",
+    //"logradouro": "",
+    "atendimento": "Segundo a Sábado",
+
+}
+
+###Login do estacionamento
+
+POST https://parkeasybd.onrender.com/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "document": "57.283.899/0001-14",
+    "password": "easy123"
 }

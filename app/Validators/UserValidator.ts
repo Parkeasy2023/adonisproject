@@ -33,7 +33,9 @@ export default class UserValidator {
     datanasc: schema.string.optional({}, [
       rules.minLength(8)
     ]),
-    cep: schema.string.optional(),
+    cep: schema.string.optional({}, [
+      rules.minLength(8)
+    ]),
     razao: schema.string.optional(),
     cidade: schema.string.optional(),
     bairro: schema.string.optional(),
