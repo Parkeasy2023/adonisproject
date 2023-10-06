@@ -34,7 +34,7 @@ export default class UserValidator {
       rules.minLength(8)
     ]),
     cep: schema.string.optional({}, [
-      rules.minLength(8)
+      rules.minLength(9)
     ]),
     razao: schema.string.optional(),
     cidade: schema.string.optional(),
