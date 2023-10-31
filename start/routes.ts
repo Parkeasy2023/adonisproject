@@ -26,3 +26,7 @@ Route.get('/', async () => {
 
 Route.post('/register', 'AuthController.register')
 Route.post('/login', 'AuthController.login')
+Route.get('/veiculo', "VeiculoController.index")
+Route.group(() => {
+  Route.resource('veiculo', 'VeiculoController').apiOnly().except(['index'])
+}).middleware('auth')

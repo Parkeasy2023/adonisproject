@@ -55,3 +55,16 @@ Content-Type: application/json
     "document": "57.283.899/0001-14",
     "password": "easy123"
 }
+
+###Cadastro de veículo
+
+POST https://parkeasybd.onrender.com/veiculo HTTP/1.1
+Content-Type: application/json
+
+{
+    "placa": "MNX-6194",
+    "cor": "Vermelho",
+    "marca": "Chevrolet",
+    "modelo": "Camaro" 
+
+}
