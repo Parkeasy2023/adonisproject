@@ -30,7 +30,7 @@ export default class User extends BaseModel {
   @column()
   public datanasc: string
 
-//específicos: string | null
+//específicos: string | nulladfa
   @column()
   public cep: string
 
