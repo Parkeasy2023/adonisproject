@@ -21,6 +21,6 @@ export default class VeiculoValidator {
 
   public messages: CustomMessages = {
     required: "O {{field}} é obrigatório!",
-    'placa.unique': "Veículo já cadastrado!",
+    'placa.unique': "Veículo já cadastrado!"
   }
 }

@@ -60,7 +60,7 @@ Content-Type: application/json
 
 POST https://parkeasybd.onrender.com/veiculo HTTP/1.1
 Content-Type: application/json
-Authorization: bearer Mg.wmwsf0_exRXdoWlH7hX-1_FN8fbAZ55WTJ2jlQWVNH0otOTrCyvYljSiAVmn
+Authorization: bearer MQ.KR6iQrOC3u2xidhQOxd4P4tSsWPit83y4KzOqrINaFqu__r2d7ml2yDDEw-9
 
 {
     "placa": "MNX-6194",
@@ -70,4 +70,12 @@ Authorization: bearer Mg.wmwsf0_exRXdoWlH7hX-1_FN8fbAZ55WTJ2jlQWVNH0otOTrCyvYljS
 
 }
 
-##Problemas: Não aparece o id do usuário, cadastra dois veículos com placas iguais
+###Atualizar Perfil
+
+POST https://parkeasybd.onrender.com/atualizarUser HTTP/1.1
+Content-Type: application/json
+Authorization: bearer MQ.1AX8SJV5kKJu68Qk-xslQqWHBiakOuL5n8fS1MYrxBsde-vYOhubOxqS4wpN
+
+{
+    "usuario": "clara1wm"
+}
