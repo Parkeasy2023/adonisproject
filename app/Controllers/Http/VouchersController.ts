@@ -6,7 +6,7 @@ export default class VouchersController {
 
     public async register({ request }: HttpContextContract) {
         const data = await request.validate(VoucherValidator)
-        const userDb = await Voucher.create(data) //em algum lugar existe uma diferença entre o date e o datetime
+        const userDb = await Voucher.create(data) //em algum lugar existe uma diferença entre o date e o datetimegit 
         return userDb
     }
 
