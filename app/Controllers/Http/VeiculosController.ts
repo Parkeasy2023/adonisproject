@@ -4,9 +4,9 @@ import Veiculo from "../../Models/Veiculo"
 
 export default class VeiculosController {
 
-    public async register({ request }: HttpContextContract) {
+    public async register({ request, auth }: HttpContextContract) {
         const data = await request.validate(VeiculoValidator)
-        const userDb = await Veiculo.create(data)
+        const userDb = await Veiculo.create({...data, user_id: auth.user?.id})
         return userDb
     }
 
