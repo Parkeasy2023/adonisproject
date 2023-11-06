@@ -12,7 +12,6 @@ export default class extends BaseSchema {
       table.string('cor').notNullable()
       table.string('marca').notNullable()
       table.string('modelo').notNullable()
-      table.string('type').notNullable()
       table.string('token', 64).notNullable().unique()
 
       /**
