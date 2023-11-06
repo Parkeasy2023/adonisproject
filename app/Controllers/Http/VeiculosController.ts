@@ -1,5 +1,4 @@
 import { HttpContextContract } from "@ioc:Adonis/Core/HttpContext"
-import User from "../../Models/User"
 import VeiculoValidator from "../../Validators/VeiculoValidator" 
 import Veiculo from "../../Models/Veiculo"
 
@@ -7,7 +6,7 @@ export default class VeiculosController {
 
     public async register({ request }: HttpContextContract) {
         const data = await request.validate(VeiculoValidator)
-        const userDb = await User.create(data)
+        const userDb = await Veiculo.create(data)
         return userDb
     }
 

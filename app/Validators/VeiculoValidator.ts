@@ -14,10 +14,6 @@ export default class VeiculoValidator {
     marca: schema.string({}, [
       rules.required()
     ]),
-    password: schema.string({}, [
-      rules.required(),
-      rules.minLength(5)
-    ]),
     modelo: schema.string({}, [
       rules.required()
     ]),
