@@ -1,12 +1,12 @@
 import { HttpContextContract } from "@ioc:Adonis/Core/HttpContext"
-import UserValidator from "../../Validators/UserValidator"
 import User from "../../Models/User"
+import VeiculoValidator from "../../Validators/VeiculoValidator" 
 import Veiculo from "../../Models/Veiculo"
 
 export default class VeiculosController {
 
     public async register({ request }: HttpContextContract) {
-        const data = await request.validate(UserValidator)
+        const data = await request.validate(VeiculoValidator)
         const userDb = await User.create(data)
         return userDb
     }
@@ -29,9 +29,9 @@ export default class VeiculosController {
       }
 
     public async destroy({ params }: HttpContextContract) {
-        const projetoDB = await Veiculo.findOrFail(params.id)
-        await projetoDB.delete()
-        return projetoDB
+        const veiculoDB = await Veiculo.findOrFail(params.id)
+        await veiculoDB.delete()
+        return veiculoDB
       }
 
 }
