@@ -60,7 +60,7 @@ Content-Type: application/json
 
 POST https://parkeasybd.onrender.com/veiculo HTTP/1.1
 Content-Type: application/json
-Authorization: bearer NA.eBMoOji5WkHKkmVK1BlmqmzP5xXvhuzJi1dD3VlIWqOVu9JGXV9Up-WPP7Xe
+Authorization: bearer Mg.wmwsf0_exRXdoWlH7hX-1_FN8fbAZ55WTJ2jlQWVNH0otOTrCyvYljSiAVmn
 
 {
     "placa": "MNX-6194",
@@ -69,3 +69,5 @@ Authorization: bearer NA.eBMoOji5WkHKkmVK1BlmqmzP5xXvhuzJi1dD3VlIWqOVu9JGXV9Up-W
     "modelo": "Camaro" 
 
 }
+
+##Problemas: Não aparece o id do usuário, cadastra dois veículos com placas iguais

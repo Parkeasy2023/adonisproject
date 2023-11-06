@@ -6,6 +6,9 @@ export default class Veiculo extends BaseModel {
   public id: number
 
   @column()
+  public user_id: number
+
+  @column()
   public placa: string
 
   @column()

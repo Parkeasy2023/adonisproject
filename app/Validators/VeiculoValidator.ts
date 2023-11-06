@@ -6,7 +6,7 @@ export default class VeiculoValidator {
   public schema = schema.create({
     placa: schema.string({}, [
       rules.required(),
-      rules.unique({ table: 'Veiculos', column: 'placa' })
+      rules.unique({ table: 'veiculos', column: 'placa' })
     ]),
     cor: schema.string({}, [ //deve ser select
       rules.required(),

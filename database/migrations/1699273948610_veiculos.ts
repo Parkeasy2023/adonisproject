@@ -9,7 +9,7 @@ export default class extends BaseSchema {
       table.increments('id').primary()
       table.integer('user_id').unsigned().references('id').inTable('users').onDelete('CASCADE')
       //id do proprietário
-      table.string('placa').notNullable()
+      table.string('placa').notNullable().unique()
       table.string('cor').notNullable()
       table.string('marca').notNullable()
       table.string('modelo').notNullable()
