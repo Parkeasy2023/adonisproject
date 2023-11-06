@@ -60,6 +60,7 @@ Content-Type: application/json
 
 POST https://parkeasybd.onrender.com/veiculo HTTP/1.1
 Content-Type: application/json
+Authorization: bearer Mw.a4FdoBB7WxHax1LxmQ04o_z_Jf6PcNNmSWnBxm2K7pRQd4UcMHwADLcpK_JD
 
 {
     "placa": "MNX-6194",
