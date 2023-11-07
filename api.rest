@@ -74,7 +74,7 @@ Authorization: bearer
 
 POST https://parkeasybd.onrender.com/cadastrarVoucher HTTP/1.1
 Content-Type: application/json
-Authorization: bearer Mw.BfqwVnxRp5Pg0php1L3nFkb810KZcO2J4b_-1P8y-k5rxTSVW5JT59Wud_E0
+Authorization: bearer MQ.U0z_L9nlaTGyqXNVYO9LFYWhkhMupKTo9zg2nIQtPeHOym6-TAtpQ57KCtJ4
 
 {
     "datad": "07/11/2023",

@@ -29,4 +29,5 @@ Route.post('/login', 'AuthController.login')
 Route.group(() => {
   Route.resource('veiculo', 'VeiculosController').apiOnly()
   Route.resource('cadastrarVoucher', 'VouchersController').apiOnly()
+  Route.resource('atualizarPerfil', 'AuthController').apiOnly()
 }).middleware('auth')
