@@ -9,19 +9,19 @@ export default class Voucher extends BaseModel {
   public user_id: number
   
   @column()
-  public datad: Date
+  public datad: string
 
   @column()
   public quantidade: number
 
   @column()
-  public horario_inicio: DateTime
+  public horario_inicio: string
 
   @column()
   public horario_termino: string
 
   @column()
-  public valor: string
+  public valor: number
 
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime

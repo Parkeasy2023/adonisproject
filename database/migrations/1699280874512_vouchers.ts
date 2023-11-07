@@ -9,10 +9,10 @@ export default class extends BaseSchema {
       table.increments('id').primary()
       table.integer('user_id').unsigned().references('id').inTable('users').onDelete('CASCADE')
       //id do proprietário
-      table.date('datad').notNullable()
+      table.string('datad').notNullable()
       table.number('quantidade').notNullable()
-      table.dateTime('horario_incio').notNullable()
-      table.dateTime('horario_termino').notNullable()
+      table.string('horario_incio').notNullable()
+      table.string('horario_termino').notNullable()
       table.number('valor').notNullable()
 
 

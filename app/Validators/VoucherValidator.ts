@@ -4,7 +4,7 @@ import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 export default class VeiculoValidator {
   constructor(protected ctx: HttpContextContract) { }
   public schema = schema.create({
-    datad: schema.date({}, [
+    datad: schema.string({}, [
       rules.required(),
     ]),
     quantidade: schema.number([
