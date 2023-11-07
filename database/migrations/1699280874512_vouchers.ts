@@ -8,14 +8,11 @@ export default class extends BaseSchema {
     this.schema.createTable(this.tableName, (table) => {
       table.increments('id').primary()
       table.integer('user_id').unsigned().references('id').inTable('users').onDelete('CASCADE')
-      //id do proprietário
       table.string('datad').notNullable()
-      table.number('quantidade').notNullable()
+      table.number['quantidade'].notNullable()
       table.string('horario_incio').notNullable()
       table.string('horario_termino').notNullable()
-      table.number('valor').notNullable()
-
-
+      table.number['valor'].notNullable()
       /**
        * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL
        */
