@@ -20,5 +20,11 @@ export default class VouchersController {
         VoucherDB.valor = valor
         await VoucherDB.save()
         return VoucherDB
+    }
+
+    public async store({ request }: HttpContextContract) {
+        const data = request.only(["datad", "quantidade", "horario_inicio", "horario_termino", "valor" ])
+        const voucherDB = await Voucher.create({ ...data })
+        return voucherDB
       }
 }

@@ -60,7 +60,7 @@ Content-Type: application/json
 
 POST https://parkeasybd.onrender.com/veiculo HTTP/1.1
 Content-Type: application/json
-Authorization: bearer MQ.KR6iQrOC3u2xidhQOxd4P4tSsWPit83y4KzOqrINaFqu__r2d7ml2yDDEw-9
+Authorization: bearer 
 
 {
     "placa": "MNX-6194",
@@ -70,12 +70,16 @@ Authorization: bearer MQ.KR6iQrOC3u2xidhQOxd4P4tSsWPit83y4KzOqrINaFqu__r2d7ml2yD
 
 }
 
-###Atualizar Perfil
+###Cadastrar Voucher
 
-POST https://parkeasybd.onrender.com/atualizarUser HTTP/1.1
+POST https://parkeasybd.onrender.com/cadastrarVoucher HTTP/1.1
 Content-Type: application/json
-Authorization: bearer MQ.1AX8SJV5kKJu68Qk-xslQqWHBiakOuL5n8fS1MYrxBsde-vYOhubOxqS4wpN
+Authorization: bearer Mw.BfqwVnxRp5Pg0php1L3nFkb810KZcO2J4b_-1P8y-k5rxTSVW5JT59Wud_E0
 
 {
-    "usuario": "clara1wm"
+    "datad": "07/11/2023",
+    "quantidade": "5",
+    "horario_inicio": "08:30",
+    "horario_termino": "10:00",
+    "valor": "R$20,00"
 }

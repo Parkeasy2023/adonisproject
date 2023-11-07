@@ -10,7 +10,7 @@ export default class extends BaseSchema {
       table.integer('user_id').unsigned().references('id').inTable('users').onDelete('CASCADE')
       table.string('datad').notNullable()
       table.string('quantidade').notNullable()
-      table.string('horario_incio').notNullable()
+      table.string('horario_inicio').notNullable()
       table.string('horario_termino').notNullable()
       table.string('valor').notNullable()
       /**
