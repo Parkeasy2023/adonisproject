@@ -60,7 +60,7 @@ Content-Type: application/json
 
 POST https://parkeasybd.onrender.com/veiculo HTTP/1.1
 Content-Type: application/json
-Authorization: bearer 
+Authorization: bearer Mg.Ob4WZNgN7811ZjRTIVBnEAEIQIqd3qe42JGlgx3vM5QpztUl6x09aL28TgN5
 
 {
     "placa": "MNX-6194",
@@ -74,7 +74,7 @@ Authorization: bearer
 
 POST https://parkeasybd.onrender.com/cadastrarVoucher HTTP/1.1
 Content-Type: application/json
-Authorization: bearer MQ.U0z_L9nlaTGyqXNVYO9LFYWhkhMupKTo9zg2nIQtPeHOym6-TAtpQ57KCtJ4
+Authorization: bearer Mg.Ob4WZNgN7811ZjRTIVBnEAEIQIqd3qe42JGlgx3vM5QpztUl6x09aL28TgN5
 
 {
     "datad": "07/11/2023",

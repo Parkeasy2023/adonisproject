@@ -24,4 +24,18 @@ export default class AuthController {
         }
 
     }
+
+    public async update({ params, request }: HttpContextContract) {
+        const veiculoDB = await User.findOrFail(params.id)
+        const  { name, usuario, email, password, document, telefone, sexo,  } = request.only(["name", "usuario", "email", "password", "document", "telefone", "sexo", "datanasc"])
+        veiculoDB.name = name
+        veiculoDB.usuario = usuario
+        veiculoDB.email = email
+        veiculoDB.password = password
+        veiculoDB.document = document
+        veiculoDB.telefone = telefone
+        veiculoDB.sexo = sexo
+        await veiculoDB.save()
+        return veiculoDB
+      }
 }
