@@ -4,28 +4,28 @@ import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 export default class UserValidator {
   constructor(protected ctx: HttpContextContract) { }
   public schema = schema.create({
-    name: schema.string({}, [
+    name: schema.string({}, [ //estacionamento
       rules.required()
     ]),
-    email: schema.string({}, [
+    email: schema.string({}, [ //estacionamento
       rules.required(),
       rules.email(),
       rules.unique({ table: 'users', column: 'email' })
     ]),
-    usuario: schema.string({}, [
+    usuario: schema.string({}, [ //estacionamento
       rules.required(),
       rules.unique({ table: 'users', column: 'usuario' })
-    ]),
-    password: schema.string({}, [
+    ]), 
+    password: schema.string({}, [ //estacionamento
       rules.required(),
       rules.minLength(5)
     ]),
-    document: schema.string({}, [
+    document: schema.string({}, [ //estacionamento
       rules.required(),
       rules.unique({ table: 'users', column: 'document'}),
       rules.minLength(14)
     ]),
-    telefone: schema.string({}, [
+    telefone: schema.string({}, [ //estacionamento
       rules.required(),
       rules.minLength(10)
     ]),
@@ -33,15 +33,15 @@ export default class UserValidator {
     datanasc: schema.string.optional({}, [
       rules.minLength(8)
     ]),
-    cep: schema.string.optional({}, [
+    cep: schema.string.optional({}, [ //estacionamento
       rules.minLength(9)
     ]),
-    razao: schema.string.optional(),
-    cidade: schema.string.optional(),
-    bairro: schema.string.optional(),
-    numero: schema.string.optional(),
-    logradouro: schema.string.optional(),
-    atendimento: schema.string.optional(),
+    razao: schema.string.optional(), //estacionamento
+    cidade: schema.string.optional(), //estacionamento
+    bairro: schema.string.optional(), //estacionamento
+    numero: schema.string.optional(), //estacionamento
+    logradouro: schema.string.optional(), //estacionamento
+    atendimento: schema.string.optional(), //estacionamento
   })
 
   public messages: CustomMessages = {
