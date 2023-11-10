@@ -10,9 +10,10 @@ export default class VeiculosController {
         return userDb
     }
 
-    public async update({ params, request }: HttpContextContract) {
+    public async update({ params, request, auth }: HttpContextContract) {
         const veiculoDB = await Veiculo.findOrFail(params.id)
         const  { placa, marca, cor, modelo } = request.only(["placa", "marca", "cor", "modelo"])
+        veiculoDB.user_id= auth.user?.id as number
         veiculoDB.placa = placa
         veiculoDB.marca = marca
         veiculoDB.cor = cor
